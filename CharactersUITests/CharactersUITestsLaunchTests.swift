@@ -1,13 +1,13 @@
 //
-//  MarvelCharactersUITestsLaunchTests.swift
-//  MarvelCharactersUITests
+//  CharactersUITestsLaunchTests.swift
+//  CharactersUITests
 //
 //  Created by Ryan Haycock on 22/02/2023.
 //
 
 import XCTest
 
-class MarvelCharactersUITestsLaunchTests: XCTestCase {
+class CharactersUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
