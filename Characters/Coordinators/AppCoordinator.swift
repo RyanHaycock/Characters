@@ -10,6 +10,7 @@ import UIKit
 final class AppCoordinator: Coordinator {
     
     let window: UIWindow
+    private let navigationController = UINavigationController()
     
     init(window: UIWindow = UIWindow(frame: UIScreen.main.bounds)) {
         self.window = window
@@ -20,10 +21,24 @@ final class AppCoordinator: Coordinator {
 
 extension AppCoordinator {
     func start() {
+        launchCharacterList()
+    }
+    
+    private func launchCharacterList() {
         let viewModel = CharacterListViewModel()
         let vc = CharacterListViewController(viewModel: viewModel)
-        let navigationController = UINavigationController(rootViewController: vc)
+        self.navigationController.pushViewController(vc, animated: false)
+        
+        viewModel.onCharacterTapped = { [weak self] character in
+            self?.launchCharacterInfo(for: character)
+        }
         setRootViewController(navigationController)
+    }
+    
+    private func launchCharacterInfo(for character: Character) {
+        let viewModel = CharacterInfoViewModel(character: character)
+        let vc = CharacterInfoViewController(viewModel: viewModel)
+        navigationController.present(vc, animated: true)
     }
 }
 
