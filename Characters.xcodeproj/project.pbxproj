@@ -64,6 +64,8 @@
 		94CA85E929AB6DCE00481402 /* NSDirectionalEdgeInsets+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CA85E829AB6DCE00481402 /* NSDirectionalEdgeInsets+Convenience.swift */; };
 		94CA85EC29AB790300481402 /* NSMutableAttributedString+Append.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CA85EB29AB790300481402 /* NSMutableAttributedString+Append.swift */; };
 		94CA85EE29AB798700481402 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94CA85ED29AB798700481402 /* Montserrat-SemiBold.ttf */; };
+		94CA85F229AC094000481402 /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CA85F129AC094000481402 /* Cancellable.swift */; };
+		94CA85F429AC097500481402 /* URLSessionDataTask+Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94CA85F329AC097500481402 /* URLSessionDataTask+Cancellable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +147,8 @@
 		94CA85E829AB6DCE00481402 /* NSDirectionalEdgeInsets+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDirectionalEdgeInsets+Convenience.swift"; sourceTree = "<group>"; };
 		94CA85EB29AB790300481402 /* NSMutableAttributedString+Append.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Append.swift"; sourceTree = "<group>"; };
 		94CA85ED29AB798700481402 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		94CA85F129AC094000481402 /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
+		94CA85F329AC097500481402 /* URLSessionDataTask+Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSessionDataTask+Cancellable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -321,6 +325,7 @@
 				94CA85B229A6859D00481402 /* Hex.swift */,
 				94CA858A29A6807C00481402 /* ReusableView.swift */,
 				94CA858E29A680C200481402 /* AutoLayout */,
+				94CA85F129AC094000481402 /* Cancellable.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -353,6 +358,7 @@
 				94CA859B29A681B300481402 /* Set+CaseIterable.swift */,
 				94CA85C829A6B16600481402 /* Thread+Convenience.swift */,
 				94CA85CA29A6B1E300481402 /* URLResponse+Convenience.swift */,
+				94CA85F329AC097500481402 /* URLSessionDataTask+Cancellable.swift */,
 				94CA85EA29AB78F100481402 /* Attributed Strings */,
 				94CA85E529AB69E100481402 /* String */,
 			);
@@ -606,6 +612,7 @@
 				94CA859429A680FE00481402 /* UIView+Edge.swift in Sources */,
 				94CA85D729A6B53F00481402 /* CharacterServiceError.swift in Sources */,
 				94CA85BF29A689C000481402 /* FontSizeToken.swift in Sources */,
+				94CA85F429AC097500481402 /* URLSessionDataTask+Cancellable.swift in Sources */,
 				94CA85B329A6859D00481402 /* Hex.swift in Sources */,
 				94CA85E729AB6A5000481402 /* String+Empty.swift in Sources */,
 				94CA854129A6795A00481402 /* AppDelegate.swift in Sources */,
@@ -615,6 +622,7 @@
 				94CA859C29A681B300481402 /* Set+CaseIterable.swift in Sources */,
 				94CA85CE29A6B41400481402 /* MainNetworkRouter.swift in Sources */,
 				94CA85A429A6821100481402 /* UIStackView+ArrangedSubviews.swift in Sources */,
+				94CA85F229AC094000481402 /* Cancellable.swift in Sources */,
 				94CA85C529A68D5600481402 /* CharacterListViewModel.swift in Sources */,
 				94CA85D229A6B45F00481402 /* HTTPStatusCode.swift in Sources */,
 				94CA85C929A6B16600481402 /* Thread+Convenience.swift in Sources */,

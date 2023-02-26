@@ -66,6 +66,7 @@ final class CharacterCell: UITableViewCell, ReusableView {
     private let spacer = UIStackView()
     
     private var viewModel: ViewModel?
+    private var pendingImageRequest: Cancellable?
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -135,6 +136,8 @@ extension CharacterCell {
         super.prepareForReuse()
         self.viewModel = nil
         self.characterImageView.image = nil
+        self.pendingImageRequest?.cancel()
+        self.pendingImageRequest = nil
     }
 }
 
@@ -171,7 +174,7 @@ extension CharacterCell {
     }
     
     private func configureImage(from viewModel: ViewModel) {
-        characterImageView.setImage(with: viewModel.imageURL)
+        self.pendingImageRequest = characterImageView.setImage(with: viewModel.imageURL)
     }
 }
 
