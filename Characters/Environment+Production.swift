@@ -10,6 +10,7 @@ import Foundation
 extension Environment {
     static let productionEnvironment = Environment(
         characterService: MainCharacterService(),
-        imageService: MainImageService()
+        imageService: MainImageService(),
+        logManager: MainLogManager()
     )
 }

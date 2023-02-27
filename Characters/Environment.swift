@@ -12,4 +12,6 @@ var Env: Environment!
 struct Environment {
     let characterService: CharacterService
     let imageService: ImageService
+    
+    let logManager: LogManager
 }

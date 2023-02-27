@@ -40,7 +40,7 @@ final class CharacterListViewModel: NSObject, CharacterListViewModelProtocol {
                 self?.onReloadData?()
                 
             case .failure(let error):
-                print(error) // TODO: add logging to avoid printing in production
+                Env.logManager.log(error)
             }
         }
     }

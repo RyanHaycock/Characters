@@ -8,7 +8,7 @@
 import UIKit
 
 extension UIImageView {
-    // TODO: add a fade animation when on screen
+    // TODO: add a fade animation when loaded image is on screen
     @discardableResult
     func setImage(with url: URL?) -> Cancellable? {
         guard let url = url else { return nil }
